@@ -1,0 +1,15 @@
+@mixin mq($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and (min-width: map-get($breakpoints, $bp)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $bp) {
+      @content;
+    }
+  }
+}
+/*  esta funcion mixin permite mediante la condicional adaptar el responsive a determinados componentes del sitio 
+y poder definir distintas resoluciones que pueden corregir posibles irregularidades */
+/* Ej: -en el css del componente-
+@include mq(500px) { @content es reemplazado por las reglas ha definir particulares} */

@@ -1,0 +1,15 @@
+/* ************helpers********************* */
+// De lo particular a lo general por la cascada
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './helpers/reset';
+@import './helpers/utilities';
+@import './helpers/pages';
+
+/* *****************components*************** */
+
+@import './components/header';
+@import './components/logo';
+@import './components/menu';
+@import './components/social_media';
+@import './components/footer';
